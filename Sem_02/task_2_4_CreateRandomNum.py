@@ -6,16 +6,16 @@
 ## Учтите, что есть диапазон: от(минимальное) и до (максимальное)
 ## **************************************
 
-# import datetime, math  
-# ## Функция № 1 - взял код у преподавателя
-# def random_teacher(_min = 0, _max = 1):     
-#     d = _max - _min  #9     
-#     ms = datetime.datetime.today().microsecond / (10 ** 6)     
-#     #print(f'{ms=}')     
-#     return _min + math.ceil(d * ms)   
+import datetime, math  
+## Функция № 1 - взял код у преподавателя
+def random_teacher(_min = 0, _max = 1):     
+    d = _max - _min  #9     
+    ms = datetime.datetime.today().microsecond / (10 ** 6)     
+    #print(f'{ms=}')     
+    return _min + math.ceil(d * ms)   
 
 
-# ## ********* основной код - функция main  ********* 
-# border_left  = int(input("Введите левую границу интервала для загаданного числа (min) = "))
-# border_right = int(input("Введите правую границу интервала для загаданного числа (max) = "))
-# print(f"Сгенерировано случайное число : {random_teacher(border_left,border_right)} из ({border_left}; {border_right})")
+## ********* основной код - функция main  ********* 
+border_left  = int(input("Введите левую границу интервала для загаданного числа (min) = "))
+border_right = int(input("Введите правую границу интервала для загаданного числа (max) = "))
+print(f"Сгенерировано случайное число : {random_teacher(border_left,border_right)} из ({border_left}; {border_right})")
